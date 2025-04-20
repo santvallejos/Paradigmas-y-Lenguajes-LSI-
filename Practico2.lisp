@@ -38,11 +38,69 @@
     • lluvia_caida: la cantidad en mm/h de lluvia caída ese día
     Desarrollar las funciones necesarias para obtener los siguientes datos:
     a. ¿Cuál es el primer día que se informa la cantidad de lluvia caída?
+
+    (car (car lluvia_enero))
+
     b. ¿Cuánto llovió el primer día que se informa?
+
+    (cdar lluvia_enero)
+
     c. ¿Cuál es el último día que se informa la cantidad de lluvia caída?
+
+    (caar (reverse lluvia_enero))
+
     d. ¿Cuánto llovió el último día que se informa?
+
+    (cdar (reverse lluvia_enero))
+
     e. Informar el día y la cantidad de lluvia caída el 4to día que se registra en la lista (devolver la
     sublista)
+
+    (nth 3 lluvia_enero)
+
     f. Informar la cantidad de lluvia caída el 4to día que se registra en la lista.
+
+    (cdar (nth 3 lluvia_enero))
+
     g. Evaluar si ( 10 9.5) se encuentra en la lista lluvia_enero
+
+    (member '(10 9.5) lluvia_enero)
+|#
+
+#| 
+    Los días del mes de Enero y su temperatura promedio para cada uno de los días se almacenan en
+    dos listas diferentes, cada una almacenada en su respectiva variable. Ellas son:
+
+    • días_enero: contiene los números de los días en el mes de Enero ( 1 2 3 4….)
+    • temp_promedio: contiene la temperatura promedio de cada día ( 37 35 37 …)
+
+    Leer con atención el apunte funciones constructoras de listas y luego desarrollar las funciones
+    necesarias para poder resolver los siguientes items
+
+    a. Informar en una lista el primer día del mes junto con su temperatura promedio
+
+    (list (car 'dias_enero) (car 'temp_promedio))
+
+    b. Informar en una lista el último día del mes junto con su temperatura promedio
+
+    (list (car (reverse 'dias_enero)) (car (reverse 'temp_promedio)))
+
+    c. Devolver una nueva lista con todos los elementos de las dos listas. Los mismos deben
+    quedar todos en el primer nivel.
+
+    (append 'dias_enero 'temp_promedio)
+
+    d. Devolver una nueva lista donde el primer elemento será la lista días_enero y el segundo
+    elemento será la lista temp_promedio
+
+    (list 'dias_enero 'temp_promedio)
+
+    e. Devolver una nueva lista con todos los elementos de las dos listas. Los mismos deben
+    quedar todos en el primer nivel.
+
+    (append 'dias_enero 'temp_promedio)
+
+    f. Informar en una lista todas las temperaturas promedios menos la primera y la última
+
+    (cdr (reverse (cdr (reverse 'temp_promedio))))
 |#

@@ -42,7 +42,7 @@
     Cilindro
     Área L: (* 2 pi r h)               -------> Atoms: 5 Sublist: 0 Length: 5
     Área T: (* (* 2 pi) r (+ r h))     -------> Atoms: 2 Sublist: 2 Length: 4
-    Volumen: (* (* pi (expt 2 r)) h)   -------> Atoms: 2 Sublist: 1 Length: 4
+    Volumen: (* pi (expt 2 r) h)   -------> Atoms: 2 Sublist: 1 Length: 4
 |#
 
 #| 

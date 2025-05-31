@@ -38,6 +38,7 @@
     );cond
 );defun
 
+#| Funciones utiles |#
 (defun sumar-lista (lista)
     (cond
         ((endp lista) 0)

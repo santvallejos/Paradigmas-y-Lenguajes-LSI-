@@ -9,8 +9,7 @@
         (print "Ingrese una lista:")
         (setq lista (read))
         (if (consp lista)
-            (format t "La lista booleana respecto a si es numerico es: ~a~%" (mapcar 'numberp lista))
-            (print "No es una lista")
+            (mapcar 'numberp lista)
         );if    
     );let
 );defun

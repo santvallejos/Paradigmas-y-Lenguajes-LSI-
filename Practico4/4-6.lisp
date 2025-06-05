@@ -62,3 +62,19 @@
         (t (min-number-lista (cdr lista)))
     );cond
 );defun
+
+(defun max-number-lista (lista)
+    (cond
+        ((endp (cdr lista)) (car lista))
+        ((numberp (car lista)) (max (car lista) (max-number-lista (cdr lista))))
+        (t (max-number-lista (cdr lista)))
+    );cond
+);defun
+
+(defun min-number-lista (lista)
+    (cond
+        ((endp (cdr lista)) (car lista))
+        ((numberp (car lista)) (min (car lista) (min-number-lista (cdr lista))))
+        (t (min-number-lista (cdr lista)))
+    );cond
+);defun

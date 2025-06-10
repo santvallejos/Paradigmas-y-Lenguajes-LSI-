@@ -6,7 +6,9 @@
 |#
 
 (defun sumo-ambos (lista1 lista2)
-    (mapcar (lambda (x y)
-        (if (and (numberp x) (numberp y)) (+ x y)));Funcion principal
-    lista1 lista2);parametros de recorrido
+    (if (and (consp lista1) (consp lista2))
+            (mapcar (lambda (x y)
+                (if (and (numberp x) (numberp y)) (+ x y)));Funcion principal
+            lista1 lista2);parametros de recorrido
+    );if
 );defun

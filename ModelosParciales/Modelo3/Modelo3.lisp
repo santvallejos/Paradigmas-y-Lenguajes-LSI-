@@ -9,7 +9,8 @@
             (progn
                 (print (promedio-precios lista_prendas))
                 (print (prendas-mayor-3000 lista_prendas))
-            )
+                (print (catalogar-prendas lista_prendas))
+                (print (evaluar-stcok lista_prendas))
             (print "El dato ingresado no es valido")
         );if
     );let

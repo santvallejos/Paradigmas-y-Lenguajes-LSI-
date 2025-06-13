@@ -54,19 +54,6 @@
 #| ##################################
     Ejercio N 3 
     ################################## |#
-(defun evaluar-pesos-cajas2 ()
-    (let ((lista_cajas) (peso))
-        (print "Ingrese la lista de pesos de las cajas:")
-        (setq lista_cajas (read))
-        (print "Ingrese un peso:")
-        (setq peso (read))
-        (if (and (consp lista_cajas) (numberp peso))
-            (print (indicar-pesos-cajas lista_cajas peso))
-            (print "Los elementos ingresados no son correctos")
-        );if
-    );let
-);defun
-
 #| Como el ejercicio únicamente pide cuales son los pesos menores o igual al el valor
     ingresado, no se puede ocupar mapcar + lambda, por no tenemos que notifcar que el peso
     es mayor, entonces devemos saltear el elemento
